@@ -12,9 +12,9 @@ int main()
 	
 	int AND = a&b;	  // 00001000  which is 8
 	int OR  = a|b;	  // 00011101  which is 29
-	int XOR = a^b;	  // 00010101  which is 21  Exclusive OR
-	int onesC = ~a;	  // 11110011  which is 243 One's Complement  Flipping the bits
-	int twosC = ~a+1; // 11110100  which is 244	Two's Complement  Flipping the bits and adding one
+	int XOR = a^b;	  // 00010101  which is 21   Exclusive OR
+	int onesC = ~a;	  // 11110011  which is 243  One's Complement  Flipping the bits
+	int twosC = ~a+1; // 11110100  which is 244  Two's Complement  Flipping the bits and adding one
 	
 	// Shift Right Operation
 	
