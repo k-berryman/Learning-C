@@ -29,6 +29,8 @@ void main()
 	 // const
 	 
 	 // int
+	 int intEx = 1;
+	
 	 // double
 	 // short
 	 // long
