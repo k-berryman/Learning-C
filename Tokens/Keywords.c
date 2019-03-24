@@ -15,7 +15,7 @@ void main()
 	 // auto   defines a local variable, but it's already the default for block-scoped variables, so it's rarely used
 	 auto int autoEx = 1;
 	 
-	 // register   stores variables in register of microproccesor, makes using variables faster note - don't use with pointers
+	 // register   stores variables in register of microprocessor, makes using variables faster note - don't use with pointers
 	 register int regEx = 1;
 	 
 	 // extern   variable defined externally
@@ -28,13 +28,23 @@ void main()
 	 
 	 // const
 	 
-	 // int
+	 // FUNDAMENTAL DATA TYPES
+	 // int   integers   whole numbers, including 0
 	 int intEx = 1;
 	
-	 // double
+	 // float    real number   really any number   4 bytes
+	 float flEx = 1.0;
+	
+	 // double   real number   really any number   8 bytes
+	 double DoEx = 1.0;
+	
+	 // char   character   1 byte
+	 char charEX = 'a';
+	
+	 // void   nothingness/absense   can't have a void type variable
+	
 	 // short
 	 // long
-	 // float
 	 // signed
 	 // unsigned
 	 // struct
@@ -44,7 +54,6 @@ void main()
 		 
 	 // for
 	 // switch
-	 // void
 	 // case
 	 // default
 	 // enum
@@ -52,7 +61,6 @@ void main()
 	 // sizeof
 	 // typedef
 	 // volatile
-	 // char
 	 // do
 	 // while
 	 // return
