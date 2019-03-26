@@ -22,10 +22,10 @@
 	 // void * --> any type
 	 
 	 int test2 = 50;
-	 int *pTest2;             // ptr is a common pointer name
+	 int *pTest2;                // ptr is a common pointer name
 	 pTest2 = &test2;
 	
-	 printf("\nTest 2: \n");	 // expected outputs
+	 printf("\nTest 2: \n");     // expected outputs
 	 printf("%d \n", test2);     // test2
 	 printf("%u \n", pTest2);    // address of test2   %u calls an unsigned int
 	 printf("%u \n", &test2);    // address of test2
