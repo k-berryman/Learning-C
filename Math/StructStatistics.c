@@ -49,10 +49,10 @@ int main()
 
 void getData(record *records)
 {
-   	FILE *input; 			// pointer to the file
+   	FILE *input; 		// pointer to the file
 	char row[maxRowSize]; 	// string array to hold 1 row of data
 
-	char *column;  			// pointer to the column in the row
+	char *column;  		// pointer to the column in the row
      	int rowCount = 0;
 
    	// open file for writing
@@ -60,7 +60,7 @@ void getData(record *records)
    	if (input == NULL)
   	{
 		printf("Error opening file\n");
-       	exit (1);
+       		exit (1);
 	}
 
 	// read file contents until EOF
@@ -70,7 +70,7 @@ void getData(record *records)
 		//printf("%d ", rowCount);
  		column = strtok(row,",");
                 records[rowCount].sex = column[0];
-       // printf("%c ", records[rowCount].sex);
+     		// printf("%c ", records[rowCount].sex);
 		column = strtok(NULL,",");
                 records[rowCount].WTsep = atof(column);
 		// printf("%f ", records[rowCount].WTsep);
@@ -85,7 +85,7 @@ void getData(record *records)
 
 		column = strtok(NULL,",");
                 records[rowCount].BMIapr = atof(column);
-		}
+	}
 
        //close file
        fclose(input);
