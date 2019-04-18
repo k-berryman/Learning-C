@@ -1,6 +1,6 @@
 /*
    Statistics using Structs
-   Kaitlin Berryman cmpr271
+   Kaitlin Berryman 
 */
 
 #include<stdio.h>
