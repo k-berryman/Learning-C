@@ -73,10 +73,22 @@
       Normal Mode
       - Counts to 255 or 65,535 and then rolls over
       - Used a lot when counting ticks or timing an event
+      - TCNTn increments each clock period
+      - When max count is reached, a flag is set and TCNTn rolls back to 0
       
       CTC Mode
       - Clear Timer on Compare match mode
       - Counter cleared to 0 when TCNTn matched OCRnA
+      
+   TIFR0
+      - Timer/Counter 0 Interrupt Flag Register
+      - TOV0 bit is set when an overflow occurs in Timer/Counter 0
+      - TOV0 is cleared by writing a 1 to it
  */
    
-   
+// Normal Mode -- 10 us delay in program using timer 0
+   // Determine number of clock counts in 10 us
+   // 10 us = counts * 62.5 ns ... counts = 160
+  
+  // Determine where to start TCNT0 so that it rolls over after 160 counts
+  // 255 - 160 = 95
